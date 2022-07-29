@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Open Sans', sans-serif; (400) */
+/* font-family: 'Poppins', sans-serif; (400-600) */
+
+/* Global */
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Magenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: url('../images/bg-desktop.svg'), var(--Violet);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: contain;
+}
+
+.container-header,
+.container-main,
+.container-footer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container-footer {
+    width: 75%;
+}
+
+/* Header */
+.container-header {
+    padding: 6rem 0;
+}
+
+/* Main */
+.container-main {
+    display: flex;
+    gap: 8rem;
+}
+
+.main__picture {
+    width: 85rem;
+    height: 62rem;
+}
+
+.main__img {
+    width: 100%;
+}
+
+.main__texts {
+    width: 60rem;
+    padding-top: 5rem;
+}
+.main__h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.main__p {
+    color: var(--white);
+    font-size: 2.1rem;
+    line-height: 1.5;
+}
+
+.main__a {
+    color: var(--white);
+    border: 1px solid var(--white);
+    width: 20rem;
+    height: 6rem;
+    padding: 2rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.534);
+}
+
+.main__a:hover {
+    border: none;
+    background-color: var(--Magenta);
+}
+
+/* Footer */
+.container-footer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: end;
+}
+
+.container-social-media {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.fa-brands {
+    color: var(--white);
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--white);
+    border-radius: 5rem ;
+}
+
+.fa-brands:hover {
+    color: var(--Magenta);
+    border-color: var(--Magenta);
+}
